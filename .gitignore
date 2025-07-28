@@ -1,0 +1,15 @@
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore temporary files and compiled Python files
+*.pyc
+*.pyo
+*.log
+
+# Ignore data files or output folders (if any)
+data/
+*.csv
+
+# Ignore virtual environments
+venv/
+

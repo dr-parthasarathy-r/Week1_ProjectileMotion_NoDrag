@@ -1,84 +1,74 @@
-## Week 1: Projectile Motion without Air Drag
+# Week 1: Projectile Motion Simulation (No Drag)
 
-### Description
+This project contains a Python simulation of projectile motion without air resistance, built using **Matplotlib** and **ipywidgets** for interactive visualization.
 
-A simulation of classical projectile motion under constant gravity (ignoring air resistance). The simulation models the parabolic trajectory of an object launched at an angle with a given speed. This is part of a 4-week physics simulation mini-project series aimed at showcasing physics through interactive Python simulations.
+Users can adjust the following parameters:
 
-### Features
+- **Angle of projection** (`θ`)
+- **Initial velocity** (`v₀`)
+- **Gravitational acceleration** (`g`) corresponding to different celestial bodies
 
-- Compute and visualize projectile trajectory
-- Interactivity using `ipywidgets` (sliders for launch speed and angle)
-- Dynamic plot updates with real-time changes
-- (Upcoming) Animation of projectile motion
-- (Upcoming) Gravity comparison across planets
+## 🌟 Features
 
-### Screenshots
+- Interactive **sliders** to adjust the angle and velocity
+- **Dropdown menu** to select gravity: Earth, Moon, Mars, or Jupiter
+- Visual indicators for:
+  - **Peak point** of the trajectory
+  - **Total horizontal range**
+- Smart placement of annotations to avoid overlap with title or plot borders
 
-```
-[Coming Soon]
-```
+## 📽️ Output
 
-### Getting Started
+The plot shows the path of the projectile and updates dynamically as inputs change. It includes:
 
-#### Prerequisites
+- Projectile path curve
+- Peak of the motion (marked in red)
+- Horizontal range point (marked in green)
+![Projectile Motion Simulation](screenshot.png)
 
-- Python 3.10+
-- JupyterLab
-- Install the required packages:
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Python 3.x
+- Jupyter Notebook or JupyterLab
+- Required libraries:
+  ```bash
+  pip install matplotlib ipywidgets
+  ```
+
+### Running the Simulation
+
+Run the Jupyter Notebook file:
 
 ```bash
-pip install matplotlib numpy ipywidgets
+jupyter notebook Week1_ProjectileMotion_NoDrag.ipynb
 ```
 
-Make sure to enable `ipywidgets` in JupyterLab:
-
-```bash
-jupyter nbextension enable --py widgetsnbextension
-```
-
-> If you’re using JupyterLab 3+, this might not be needed.
-
-### How to Run
-
-Launch JupyterLab and open the `.ipynb` file.\
-Adjust the sliders for **initial speed** and **angle** to explore different trajectories.
-
-### Physics Background
-
-The projectile motion is governed by the classical kinematic equations under constant acceleration due to gravity:
-
-- Horizontal distance: `x(t) = v₀ cos(θ) * t`
-- Vertical distance: `y(t) = v₀ sin(θ) * t - ½ g t²`
-
-Where:
-
-- `v₀` is the initial speed
-- `θ` is the launch angle
-- `g` is the gravitational acceleration (≈ 9.81 m/s² on Earth)
-
-### Project Structure
+## 📁 File Structure
 
 ```
 Week1_ProjectileMotion_NoDrag/
-├── Week1_ProjectileMotion_NoDrag.ipynb     # Main Jupyter notebook
-├── simulation.py                           # Python script version (optional)
-├── README.md                               # This file
-└── media/                                  # Folder for images or GIFs (optional)
+├── Week1_ProjectileMotion_NoDrag.ipynb  # Main simulation notebook
+├── README.md                            # Project documentation
 ```
 
-### Future Enhancements
+## 🏷️ Release Notes
 
-- 🎞️ Animation with `FuncAnimation`
-- 🌌 Compare motion under different planetary gravities
-- 🎮 Add reset/start/pause buttons for animation
-- 📄 Exportable reports from simulation results
+### v1.0 (Pre-release)
 
-### Author
+- Initial implementation of the simulation with interactive sliders
+- Added support for gravity selection via dropdown
+- Tagged as pre-release pending cleanup and animation integration
 
-**Dr. Parthasarathy R.**\
-[GitHub Profile](https://github.com/dr-parthasarathy-r)
+## 📜 License
 
-### License
+This project is licensed under the MIT License.
 
-This project is open source and available under the [MIT License](LICENSE)
+## 👨‍💻 Author
+
+Parthasarathy R.
+
+Feel free to contribute or fork the repo at: [github.com/dr-parthasarathy-r](https://github.com/dr-parthasarathy-r)
 
